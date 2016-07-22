@@ -4108,7 +4108,10 @@ nav i.material-icons {
 nav .nav-wrapper {
   position: relative;
   height: 100%;
-  background-color:#ff7043
+  background-color:#ff7043;
+  color: #0000000;
+  opacity: 1;
+
 }
 
 @media only screen and (min-width: 993px) {
@@ -6723,6 +6726,20 @@ input[type=range]:focus::-ms-fill-upper {
   margin: 10px 15px;
 }
 
+.container span::before{
+  position: absolute;
+  bottom:0;
+  left:0;
+  content: attr(data-title);
+  color: #666;
+  opacity: 0;
+
+  -webkit-transition:opacity 0.4s;
+  transition:opacity 0.4s;
+}
+.container span:hover::before{
+  opacity: 1;
+}
 .side-nav a.btn, .side-nav a.btn-large, .side-nav a.btn-large, .side-nav a.btn-floating {
   color: #fff;
 }

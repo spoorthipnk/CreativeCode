@@ -29,7 +29,7 @@
         width: auto;
       }
       a{
-        color: #fff
+        color: #000000;
         text-decoration:none;
         font-weight: bold;
       }
@@ -39,8 +39,8 @@
 
       }
       header{
-        color: #ff7043
-
+        color: #ff7043;
+        background-image: "nav-background.jpg";
       }
       #menu-icon{
 
@@ -55,11 +55,15 @@
       nav ul li{
         display: inline-block;
         float: left;
-        padding: 10px
+        padding: 10px;
       }
       .current{
-        color: #fff
-        text-decoration:underline;
+        color: #212121;
+        text-shadow: 0.8px 0.8px #424242;
+        opacity: 1;
+        letter-spacing: 0.5px;
+        font-family: "Times New Roman", Times, serif;
+        font-size: 20px;
 
       }
       #doc{
@@ -74,6 +78,36 @@
       .blueberry{
         max-width: 960px;
         margin-top: 110px;
+      }
+      section{
+        width: 29%;
+        float: left;
+        margin: 2% 2%;
+        text-align: center;
+      }
+      .clear{
+        clear: both;
+      }
+      article{
+        float: left;
+        margin: 0 auto;
+        width: 50%;
+        height: auto;
+        padding: 4%;
+      }
+      aside{
+        float: right;
+        margin: 0 auto;
+        width: 35%;
+        height: auto;
+        padding: 3%;
+      }
+      footer.second{
+        border-top: 1px solid #4D4E50;
+        background-color:#333333;
+        max-height: 50px;
+        text-align: center;
+        opacity: 0.95;
       }
 
 
@@ -92,21 +126,26 @@
 
     <body>
       <header>
-        <a href = "#" id="logo"></a>
+
         <nav>
           <div class="nav-wrapper">
+            <div class="container">
+
+            <a href = "#" class="brand-logo right" id="logo">LOgoo</a>
           <a href = "#" id="menu-icon"></a>
           <ul id="nav-mobile" class="left hide-on-med-and-down">
             <li>
               <a href = "#" class = "current">Home</a>
             </li>
-              <li><a href = "#" class = "current">FunTime</a> </li>
-              <li><a href = "#" class = "current">About me</a> </li>
+              <li><a href = "#" class = "current"><span data-title="whateerverere">FunTime</span></a></li>
+              <li><a href = "#" class = "current"><span data-title="really?">About me</span></a> </li>
               <li><a href = "#" class = "current">Projects</a></li>
               <li><a href = "#" class = "current">Skills</a> </li>
               <li><a href = "#" class = "current">Contact</a> </li>
           </ul>
+
         </div>
+      </div>
         </nav>
       </header>
       <!--for the image slider-->
@@ -148,14 +187,14 @@
           <img src = "http://www.w3newbie.com/wp-content/uploads/gym-classes.jpg"/>
         </article>
           <aside>
-            <h2>Nam egestas nec mi commodo interdum. Sed interdum tincidunt eros, id sodales mauris imperdiet sed. Sed rhoncus ut justo a varius. Aenean sed ante sollicitudin, dignissim sapien ac, auctor risus.</h2>
+            <h4>Nam egestas nec mi </h4>
             <ul class="gym">
-              <li><h3>Duis efficitur efficitur justo, eu mattis velit.</h3></li>
-              <li><h3>Duis efficitur efficitur justo, eu mattis velit.</h3></li>
-              <li><h3>Duis efficitur efficitur justo, eu mattis velit.</h3></li>
-              <li><h3>Duis efficitur efficitur justo, eu mattis velit.</h3></li>
-              <li><h3>Duis efficitur efficitur justo, eu mattis velit.</h3></li>
-            </ul>
+              <li><h6>Duis efficitur efficitur justo, eu mattis velit.</h6></li>
+              <li><h6>Duis efficitur efficitur justo, eu mattis velit.</h6></li>
+              <li><h6>Duis efficitur efficitur justo, eu mattis velit.</h6></li>
+              <li><h6>Duis efficitur efficitur justo, eu mattis velit.</h6></li>
+              <li><h6>Duis efficitur efficitur justo, eu mattis velit.</h6></li>
+
           </aside>
           <div class="clear"></div>
           <section>
@@ -178,11 +217,9 @@
           </section>
           <footer>
             <section>
-              <h3>ummmmmmmmmmmmm</h3>
-              <h3>ummmmmmmmmmmmm</h3>
-
-              <h3>ummmmmmmmmmmmm</h3>
-
+              <h5>ummmmmmmmmmmmm</h5>
+                <h5>ummmmmmmmmmmmm</h5>
+                  <h5>ummmmmmmmmmmmm</h5>
             </section>
             <section>
               <ul class="social">
